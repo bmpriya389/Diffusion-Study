@@ -36,7 +36,7 @@ shinyUI(
   theme = shinytheme("flatly"),
   ### position attribute specifies position of navbar and visibility while scrolling ###
   position ="static-top", fluid = TRUE,
-
+ title = "Study Of Diffusion in graphs",
   tabPanel(
     "Erdos Renyi",
     column(
