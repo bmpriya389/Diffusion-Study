@@ -66,13 +66,13 @@ shinyServer(function(input, output, session) {
   
   output$threshold_er <- renderUI({
     numericInput(
-      "threshold_er","Threshold for ER Graph ",value = "0",min = 0,max = max_degree_value(graph_er(),c(1))
+      "threshold_er","Enter a threshold (of infected neighbors) for a node in the ER Graph to be infected",value = "0",min = 0,max = max_degree_value(graph_er(),c(1))
     )
   })
   
   output$threshold_pl <- renderUI({
     numericInput(
-      "threshold_pl","Threshold for power law Graph ",value = "0",min = 0,max = max_degree_value(graph_pl(),c(1))
+      "threshold_pl","Enter a threshold (of infected neighbors) for a node in the power law Graph to be infected ",value = "0",min = 0,max = max_degree_value(graph_pl(),c(1))
     )
   })
   
